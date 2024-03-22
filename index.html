@@ -40,38 +40,40 @@
                 display: none;
             }
           }
+          #kamna { 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
     </style>
     <link href="stylesheet.css" rel="stylesheet" />
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-red fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><h2 style="color:rgb(255, 182, 219); opacity: 0.5; margin-left: 10px;"><b>KM</b></h2></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end text-bg-ligthpink" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><strong>Kamna Malviya</strong></h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <li class="nav-item dropdown" style="margin-left: 20px;">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <strong>About Me:</strong>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" href="#education qualifications"><strong>Educational Qualification</strong></a></li>
-              <li><a class="dropdown-item" href="#my projects"><strong>My Projects</strong></a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#contact"><strong>Contact</strong></a></li>
-            </ul>
-          </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <nav >
+      <ul id="kamna">
+        <li><a class="active" href="#education qualifications">Educational Qualifications</a></li>
+        <li><a href="#my projects">My Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      
     </nav>
     <div class="container" style="height: 100vh;">
       <div class="row">
@@ -90,7 +92,7 @@
       </div>
     </div>
   </div>
-    <div class="kamna2" id="education qualifications">
+    <div class="kamna2 container" id="education qualifications">
       <h2 style="margin-top: 20px">Educational Qualifications:</h2>
       <div style=" margin-top: 30px; border-radius: 5px">
         <h3 style="margin-top: 10px; margin-left: 10px">1.Class 10th:</h3>
@@ -186,7 +188,7 @@
                   2. C++ Language.
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div id="collapsetwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <strong> I Have 70% knowledge of C++ Language.</strong>
                 </div>
@@ -195,11 +197,11 @@
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapseOne">
                     3. HTML.
                   </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div id="collapsethree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <strong> I Have 70% knowledge of HTML.</strong>
                   </div>
@@ -208,11 +210,11 @@
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="true" aria-controls="collapseOne">
                       4.CSS.
                     </button>
                   </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div id="collapsefour" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <strong> I Have 70% knowledge of CSS.</strong>
                     </div>
@@ -221,11 +223,11 @@
                 <div class="accordion" id="accordionExample">
                   <div class="accordion-item">
                     <h2 class="accordion-header">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="true" aria-controls="collapseOne">
                         5. JavaScript.
                       </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div id="collapsefive" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         <strong> I Have 70% knowledge of JavaScript.</strong>
                       </div>
@@ -234,11 +236,11 @@
                   <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                       <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="true" aria-controls="collapseOne">
                           6.Python.
                         </button>
                       </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div id="collapsesix" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                           <strong> I Have 70% knowledge of Python.</strong>
                         </div>
@@ -247,11 +249,11 @@
                     <div class="accordion" id="accordionExample">
                       <div class="accordion-item">
                         <h2 class="accordion-header">
-                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="true" aria-controls="collapseOne">
                             7.PHP.
                           </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div id="collapseseven" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
                             <strong> I Have 70% knowledge of PHP.</strong>
                           </div>
@@ -260,11 +262,11 @@
                       <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseseven" aria-expanded="true" aria-controls="collapseOne">
                               8.Bootstrap.
                             </button>
                           </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                          <div id="collapseeight" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                               <strong> I Have 70% knowledge of Bootstrap.</strong>
                             </div>
